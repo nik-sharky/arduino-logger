@@ -1,0 +1,13 @@
+######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+LOGGER	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+log_print	KEYWORD2
+log_println	KEYWORD2
+log_printf	KEYWORD2
