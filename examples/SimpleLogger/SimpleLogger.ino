@@ -1,7 +1,7 @@
 // Log all to Serial, comment this line to disable logging
-#define LOGGER Serial
-// Include must be placed after LOGGER definition to work
-#include "logger.h"
+#define LOG Serial
+// Include must be placed after LOG definition to work
+#include "log.h"
 
 void setup() {
   // start serial port at 9600 bps:

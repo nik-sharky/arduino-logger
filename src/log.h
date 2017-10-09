@@ -1,12 +1,12 @@
-#ifndef logger_h
-#define logger_h
+#ifndef log_h
+#define log_h
 
-#if defined(LOGGER)
-#define log_print(...) LOGGER.print(__VA_ARGS__)
-#define log_println(...) LOGGER.println(__VA_ARGS__)
-#define log_printf(...) _logger_printf(__VA_ARGS__)
+#if defined(LOG)
+#define log_print(...) LOG.print(__VA_ARGS__)
+#define log_println(...) LOG.println(__VA_ARGS__)
+#define log_printf(...) _log_printf(__VA_ARGS__)
 
-const size_t _logger_printf(const char *szFormat, ...) {
+const size_t _log_printf(const char *szFormat, ...) {
   va_list argptr;
   va_start(argptr, szFormat);
   char *szBuffer = 0;
